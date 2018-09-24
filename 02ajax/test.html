@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var http = new XMLHttpRequest();
+    http.onreadystatechange = function() {
+        if (http.readyState==4 && http.status==200)
+        {
+            console.log(http.responseText);
+        }
+    }
+
+    http.open("GET",url,true);
+    http.send();
+
+</script>
+</html>
